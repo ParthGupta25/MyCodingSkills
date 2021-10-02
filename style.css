@@ -43,3 +43,11 @@ img:hover{
 img{
     margin:30px;
 }
+#myCarousel{
+    background-color: aqua;
+}
+.carousel-inner{
+        margin-left:15px;
+        margin-right:15px;
+        color:black;
+}

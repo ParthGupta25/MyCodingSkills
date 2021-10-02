@@ -2,9 +2,13 @@
     <head>
     <title>My Coding Website</title>
         <link rel="stylesheet" href = "style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   </head>
     <body>
-        <ul class = "menuhead">
+        <div class = "container">        
+            <ul class = "menuhead">
             <li class = "items"><a href = "#apps">Apps</a></li>
             <li class = "items"><a href = "#games">Games and Animations</a></li>
             <li class = "items"><a href = "#arts">Art</a></li>
@@ -23,11 +27,36 @@
         <section id = "games">
             <h1>GAMES AND ANIMATIONS</h1>
             <div class = "line"></div>
-            <span>
+            <div id = "myCarousel" class = "carousel slide" data-ride="carousel">
+                <div class = "carousel-inner">
+                    <div class = "item active">
+                        <center>
                 <a href = "https://studio.code.org/projects/playlab/kO_oPSb8Tp_Ch9_SaHe8pa2NjH5TQXD6cfoyx5PwC6s" target="_blank"><img src = "Flappy.jpg" height="300" width="300"></a>
+                        <div class = "carousel-content">
+                            <p>FLAPPY BIRD</p>
+                     </div>
+                    </center>
+                    </div>
+                    <div class = "item">
+                        <center>
                 <a href = "https://studio.code.org/projects/playlab/kO_oPSb8Tp_Ch9_SaHe8pa2NjH5TQXD6cfoyx5PwC6s"target="_blank"><img src = "Story.png" height = "300" width = "300"></a>
+                        <div class = "carousel-content">
+                            <p>Story of the palace</p>
+                        </div>
+                            </center>
+                        </div>
+                    <div class = "item">
+                        <center>
               <a href = "https://studio.code.org/projects/playlab/uUwq63WikqM3do-Zq4va2AO2cvgV_TopmRHQJq3r2a0"target="_blank"><img src = "Corona.png" height = "300" width = "300"></a>
-            </span>
+                        <div class = "carousel-content">
+                        <p>Corona Chase Game</p></div>
+                            </center>
+                        </div>
+            
+                </div>
+                <a class = "left carousel-control" href = "#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                <a class = "right carousel-control" href = "#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
         </section>
         <section id = "arts">
             <h1>ARTS</h1>
@@ -44,5 +73,6 @@
                 <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/0adf6eca-2acc-4919-bb8d-0571b3a9799d"></iframe>
             </span>
         </section>
+        </div>
     </body>
 </html>
